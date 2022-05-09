@@ -1,5 +1,7 @@
 package com.nmosipenko.study.sortingalgorithms;
 
+import com.nmosipenko.study.sortingalgorithms.services.IntegerSortService;
+import com.nmosipenko.study.sortingalgorithms.sorting.SelectionSort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.List;
 
 /**
  * @author Osipenko-NM
@@ -34,7 +37,29 @@ public class Controller {
         this.applicationContext = applicationContext;
     }
 
-    @GetMapping("api/HelloWorld")
+    @PostMapping("api/sort")
+    public ResponseEntity<String> sort(final HttpServletRequest request) {
+        this.endpoint = request.getRequestURI();
+        logStart();
+
+        long timeStart = System.currentTimeMillis();
+
+        List<Integer> sortList = new IntegerSortService(new SelectionSort()).sort();
+
+        long timeStop = System.currentTimeMillis();
+
+        this.response = new ResponseEntity<>("Time = [" + (timeStop - timeStart) + "] " + sortList,
+                HttpStatus.OK);
+
+        logOutResponse();
+        logEnd();
+
+        return response;
+
+    }
+
+
+        @GetMapping("api/HelloWorld")
     public ResponseEntity<String> helloWorld(final HttpServletRequest request) {
         this.endpoint = request.getRequestURI();
         logStart();
