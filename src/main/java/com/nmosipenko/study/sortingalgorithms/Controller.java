@@ -1,6 +1,7 @@
 package com.nmosipenko.study.sortingalgorithms;
 
 import com.nmosipenko.study.sortingalgorithms.services.IntegerSortService;
+import com.nmosipenko.study.sortingalgorithms.sorting.BubbleSort;
 import com.nmosipenko.study.sortingalgorithms.sorting.SelectionSort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,7 +45,7 @@ public class Controller {
 
         long timeStart = System.currentTimeMillis();
 
-        List<Integer> sortList = new IntegerSortService(new SelectionSort()).sort();
+        List<Integer> sortList = new IntegerSortService(new BubbleSort()).sort();
 
         long timeStop = System.currentTimeMillis();
 
