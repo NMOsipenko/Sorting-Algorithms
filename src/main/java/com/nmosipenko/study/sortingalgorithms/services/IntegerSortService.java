@@ -48,7 +48,8 @@ public class IntegerSortService implements ISortingService<Integer>{
     public List<Integer> sort() {
         List<Integer> sortList = IntegerGenerator.getEntityList(this.size, this.max);
 
-        System.out.println(sortList);
+        if (sortList.size() < 1000)
+            LOGGER.info("Origin list is :" + sortList);
 
         return this.sortingService.sort(sortList);
     }
