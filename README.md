@@ -9,7 +9,12 @@
 - [x] Сортировка выборкой (Selection sort) 
 - [x] Пузырьковая сортировка (Bubble sort)
 - [x] Сортировка вставкой (Insertion sort)
-- [x] Сортировка подсчётом (Counting sort)  
+
+Сложность O(n+m)
+- [x] Сортировка подсчётом (Counting sort)
+
+Сложность O(n * log(n))
+- [x] Сортировка слиянием (Merge sort)
 ## Алгоритмы
 - [ ] 1
 
@@ -31,7 +36,7 @@
 Если он меньше - меняем местами до тех пор пока слева не будут меньше него.
 ![Insertion sort](src/main/resources/img/Insertion sort.png)
 
-***Сортировка подсчётом (Counting sort))***  
+***Сортировка подсчётом (Counting sort)***  
 Сложность O(n+m).  
 Узнаем максимальную и минимальную длинну массива.  
 Строим новый массив.  
@@ -39,8 +44,15 @@
 В поля (идекс минус минимум) записываем число повторений. 
 ![Counting sort](src/main/resources/img/Counting sort.png)
 
-***Пузырьковая сортировка (Bubble sort)***  
-![Selection sort](src/main/resources/img/Bubble sort.png)
+***Сортировка слиянием (Merge sort)***  
+Сложность O(n * log(n))  
+Использует дополнительную память.
+Оптимальна с точки зрения производительности на больших массивах.  
+Для мальних массивов можно исользовать другие виды сортировок.
+
+![Selection sort](src/main/resources/img/Merge sort.png)  
+
+![Selection sort](src/main/resources/img/Merge sort 2.png)
 
 ***Пузырьковая сортировка (Bubble sort)***  
 ![Selection sort](src/main/resources/img/Bubble sort.png)
