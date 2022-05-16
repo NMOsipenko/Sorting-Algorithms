@@ -9,6 +9,7 @@
 - [x] Сортировка выборкой (Selection sort) 
 - [x] Пузырьковая сортировка (Bubble sort)
 - [x] Сортировка вставкой (Insertion sort)
+- [x] Быстрая сортировка (Quick sort)
 
 Сложность O(n+m)
 - [x] Сортировка подсчётом (Counting sort)
@@ -54,7 +55,7 @@
 
 ![Selection sort](src/main/resources/img/Merge sort 2.png)
 
-***Пузырьковая сортировка (Bubble sort)***  
+***Быстрая сортировка (Quick sort)***  
 ![Selection sort](src/main/resources/img/Bubble sort.png)
 
 ***Пузырьковая сортировка (Bubble sort)***  
