@@ -1,10 +1,7 @@
 package com.nmosipenko.study.sortingalgorithms;
 
 import com.nmosipenko.study.sortingalgorithms.services.IntegerSortService;
-import com.nmosipenko.study.sortingalgorithms.sorting.BubbleSort;
-import com.nmosipenko.study.sortingalgorithms.sorting.CountingSort;
-import com.nmosipenko.study.sortingalgorithms.sorting.InsertionSort;
-import com.nmosipenko.study.sortingalgorithms.sorting.SelectionSort;
+import com.nmosipenko.study.sortingalgorithms.sorting.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +44,7 @@ public class Controller {
 
         long timeStart = System.currentTimeMillis();
 
-        List<Integer> sortList = new IntegerSortService(new CountingSort()).sort();
+        List<Integer> sortList = new IntegerSortService(new MergeSort()).sort();
 
         long timeStop = System.currentTimeMillis();
 
