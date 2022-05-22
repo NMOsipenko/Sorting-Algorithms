@@ -1,8 +1,6 @@
 package com.nmosipenko.study.sortingalgorithms.sorting;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author Osipenko-NM

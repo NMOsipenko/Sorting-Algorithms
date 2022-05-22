@@ -56,7 +56,13 @@
 ![Selection sort](src/main/resources/img/Merge sort 2.png)
 
 ***Быстрая сортировка (Quick sort)***  
-![Selection sort](src/main/resources/img/Bubble sort.png)
+![Selection sort](src/main/resources/img/Quick sort.png)
+Сложность O(n * log(n))  
+Не использует дополнительную память.  
+Бьется с понятием многопоточности.
+Берем массив, берем какое-то число - PIVOT  
+Слева ставим все что ниже, справа то что выше.  
+Повторяем цикл пока не закончатся элементы для перебора.
 
 ***Пузырьковая сортировка (Bubble sort)***  
 ![Selection sort](src/main/resources/img/Bubble sort.png)

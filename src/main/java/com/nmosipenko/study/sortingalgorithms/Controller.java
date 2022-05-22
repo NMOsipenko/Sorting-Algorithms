@@ -44,7 +44,7 @@ public class Controller {
 
         long timeStart = System.currentTimeMillis();
 
-        List<Integer> sortList = new IntegerSortService(new MergeSort()).sort();
+        List<Integer> sortList = new IntegerSortService(new QuickSort()).sort();
 
         long timeStop = System.currentTimeMillis();
 
